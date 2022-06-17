@@ -1,6 +1,18 @@
+
+// Write your algorithm here
+//const wordArray=word.split("")
+//const wordReversed=wordArray.reverse()
+//const reversedWord=wordReversed.join("")
+
 function isPalindrome(word) {
-  // Write your algorithm here
+  const reversedWord = reverseString(word);
+  return word === reversedWord;
 }
+function reverseString(word) {
+  return word.split("").reverse().join("");
+}
+console.log(isPalindrome('abba'))
+
 
 /* 
   Add your pseudocode here
